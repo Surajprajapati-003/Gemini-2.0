@@ -1,0 +1,27 @@
+/* Google Fonts import – Outfit font ko use karne ke liye */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Global Reset – sab elements ka default margin, padding remove */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;   /* Border-box se width/height calculation easy hota hai */
+  font-family: Outfit;      /* Pura project me same font apply hoga */
+}
+
+/* Root container (React ka main div) */
+#root {
+  min-height: 100vh;        /* Full screen height cover karega */
+  display: flex;            /* Sidebar + Main ko side-by-side show karega */
+  animation: fadeIn 1.5s;   /* Page load hone par smooth fade-in effect */
+}
+
+/* Fade-in animation – page dheere dheere visible hota hai */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;   /* Starting me fully invisible */
+  }
+  100% {
+    opacity: 1;   /* Ending me fully visible */
+  }
+}
